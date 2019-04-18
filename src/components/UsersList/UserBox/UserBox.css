@@ -1,0 +1,137 @@
+.left-section ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.left-section ul li{
+	padding: 15px 0px;
+	cursor: pointer;
+}
+
+.left-section ul li.active{
+	background: #009EF7;
+	color: #fff;
+	position: relative;
+}
+
+.left-section ul li.newMessage{
+	background: #7FFF00;
+	color: #7FFF00;
+	position: relative;
+}
+.left-section ul li.newMessage .desc .time{
+	color: #fff;
+}
+.left-section ul li.newMessage:before{
+	position: absolute;
+	content: '';
+	right: -10px;
+	border:5px solid #009EF7;
+	top: 0px;
+	bottom: 0px;
+	border-radius: 0px 3px 3px 0px;
+}
+.left-section ul li.newMessage:after{
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  right: 0px;
+  left: auto;
+  width: 100%;
+  top: 0px;
+  -webkit-box-shadow: -8px 4px 10px #a1a1a1;
+  -moz-box-shadow: -8px 4px 10px #a1a1a1;
+  box-shadow: -8px 4px 10px #a1a1a1;
+}
+.mCustomScrollBox, .mCSB_container{
+	overflow: unset !important;
+}
+.left-section ul li.active .desc .time{
+	color: #fff;
+}
+.left-section ul li.active:before{
+	position: absolute;
+	content: '';
+	right: -10px;
+	border:5px solid #009EF7;
+	top: 0px;
+	bottom: 0px;
+	border-radius: 0px 3px 3px 0px;
+}
+.left-section ul li.active:after{
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  right: 0px;
+  left: auto;
+  width: 100%;
+  top: 0px;
+  -webkit-box-shadow: -8px 4px 10px #a1a1a1;
+  -moz-box-shadow: -8px 4px 10px #a1a1a1;
+  box-shadow: -8px 4px 10px #a1a1a1;
+}
+
+.left-section .userBox{
+	overflow: hidden;
+}
+.left-section .userBox .img{
+	width: 60px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.left-section .userBox .img img{
+	width: 30px;
+	border-radius: 50%;
+}
+.left-section .userBox .img i{
+	position: absolute;
+	font-size: 10px;
+	color: #52E2A7;
+	border:1px solid #fff;
+	border-radius: 50%;
+	left: 10px;
+}
+.left-section .userBox .desc{
+	width: calc(100% - 60px);
+	float: left;
+	position: relative;
+}
+.left-section .userBox .desc h5{
+	margin-top: 6px;
+	line-height: 5px;
+  color: #000000;
+}
+.left-section .userBox .desc .time{
+	position: absolute;
+	right: 15px;
+	color: #c1c1c1;
+}
+
+
+.outer {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  max-width: 10%;
+  overflow: auto;
+  resize:both;
+  right: 90px;
+  position: absolute;
+}
+
+svg {
+  height: 100%;
+}
+
+circle {
+  fill: #3DB8A4;
+}
+
+text { 
+  fill: #fff;
+  font-size: 4rem;
+  font-family: sans-serif;
+}
