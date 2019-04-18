@@ -30,9 +30,9 @@ class UserAuthentication extends Component {
         {!this.state.login && !this.state.SignUp ?
           <div className="content">
             <div className="title">welcome</div>
-            <button onClick={this.loginClicked}>Log in</button>
-            <div className="already">Already have an account? </div>
             <button onClick={this.signUpClicked}>Sign Up</button>
+            <div className="already">Already have an account? </div>
+            <button onClick={this.loginClicked}>Log in</button>
           </div>
           : <div>
             {this.state.login ?
