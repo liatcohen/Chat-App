@@ -27,7 +27,7 @@
 }
 .message ul li.msg-left .msg-desc{
 	margin-left: 70px;
-	font-size: 12px;
+	font-size: 15px;
 	background: #E8E8E8;
 	padding:5px 10px;
 	border-radius: 5px 5px 5px 0px;
@@ -59,7 +59,7 @@
 }
 .message ul li.msg-right .msg-desc{
 	margin-right: 70px;
-	font-size: 12px;
+	font-size: 15px;
 	background: #cce5ff;
 	color: #004085;
 	padding:5px 10px;

@@ -82,7 +82,7 @@
 	position: relative;
 }
 .left-section .userBox .img img{
-	width: 30px;
+	width: 40px;
 	border-radius: 50%;
 }
 .left-section .userBox .img i{
@@ -100,9 +100,10 @@
 }
 .left-section .userBox .desc h5{
 	margin-top: 6px;
-	line-height: 5px;
-  color: #000000;
+	color: #000000;
+	font-size: 15px;
 }
+
 .left-section .userBox .desc .time{
 	position: absolute;
 	right: 15px;
