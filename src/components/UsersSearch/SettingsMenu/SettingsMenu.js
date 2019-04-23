@@ -1,14 +1,7 @@
-
 import React, { Component } from 'react';
 import './SettingsMenu.css';
 
 class SettingsMenu extends Component {
-
-  state = {
-    file: null,
-    imagePreviewUrl: null,
-    imagePreview: null
-  }
 
   handleImageChange(e) {
     e.preventDefault();
@@ -25,7 +18,7 @@ class SettingsMenu extends Component {
     return (
       <div>
         <div className="setting-menu">
-          <button><i className="fa fa-info-circle"></i>   My Details </button>
+          <button onClick={this.props.detailsClicked}><i className="fa fa-info-circle"></i>   My Details </button>
           <div className="upload-btn">
             <button><i className="fa fa-camera"></i>    Add profile picture </button>
             <input type="file" name="profile_picture" onChange={(e) => this.handleImageChange(e)} htmlFor="profile_picture" />

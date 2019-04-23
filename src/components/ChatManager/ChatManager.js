@@ -135,7 +135,11 @@ class chatManager extends Component {
     return (
       <div className="main-section">
         <div className="head-section">
-          <UsersSearch logOut={this.logOut} uploadProfilePic={this.uploadProfilePicture} />
+          <UsersSearch 
+            logOut={this.logOut}
+            uploadProfilePic={this.uploadProfilePicture}
+            userDetails={this.state.currUser}
+             />
           <MessageHead
             name={this.state.currChatConnection ? this.state.users[this.state.currChatConnection].userName : null}
             online={this.state.currChatConnection && this.state.users ? this.state.users[this.state.currChatConnection].online : ''} />
@@ -155,7 +159,7 @@ class chatManager extends Component {
               isDisabled={!this.state.chatId} />
           </div>
         </div>
-        <Modal />
+
       </div>
     );
   };
