@@ -6,12 +6,12 @@ import './UserAuthentication.css';
 class UserAuthentication extends Component {
 
   state = {
-    login: false,
-    SignUp: false,
+    // login: false,
+    SignUp: true,
   }
 
   loginClicked = () => {
-    this.setState({ login: true });
+    this.setState({ SignUp: false });
   }
 
   signUpClicked = () => {
@@ -25,22 +25,29 @@ class UserAuthentication extends Component {
   render() {
 
     return (
-
-      <div>
-        {!this.state.login && !this.state.SignUp ?
-          <div className="content">
-            <div className="title">Welcome</div>
-            <button onClick={this.signUpClicked}>Sign Up</button>
-            <div className="already">Already have an account? </div>
-            <button onClick={this.loginClicked}>Log in</button>
-          </div>
+<div class="authentication-screen">
+      <div className="content">
+        <div class="authentication-header">
+                    <div class="header-button" id={this.state.SignUp ? "active" : ""} onClick={this.signUpClicked}>Sign Up</div>
+                    <div class="header-button" id={!this.state.SignUp ? "active" : ""} onClick={this.loginClicked}>Log in</div>
+                    </div>
+        {this.state.SignUp ?
+          // <div className="contents">
+          // <div>aaa</div>
+          <SignUp userLoggedIn={this.userIn} />
+          //   <div className="title">Welcome</div>
+          //   <button onClick={this.signUpClicked}>Sign Up</button>
+          //   <div className="already">Already have an account? </div>
+          //   <button onClick={this.loginClicked}>Log in</button>
+          // </div>
           : <div>
-            {this.state.login ?
+            {/* {this.state.login ? */}
               <Login userLoggedIn={this.userIn} />
-              : <SignUp userLoggedIn={this.userIn} />
-            }
+              {/* : <SignUp userLoggedIn={this.userIn} /> */}
+            {/* } */}
           </div>
         }
+      </div>
       </div>
     );
   };

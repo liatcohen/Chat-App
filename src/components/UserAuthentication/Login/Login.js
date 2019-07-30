@@ -27,8 +27,8 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <div className="content">
-          <div className="title">Log In</div>
+        <div >
+          <div className="title">Welcome Back!</div>
           <input type="text" placeholder="E-mail" onChange={(event) => this.setState({ email: event.target.value })} />
           <input type="password" placeholder="Password" onChange={(event) => this.setState({ password: event.target.value })} />
           <button onClick={this.loginToAccount}>Log In</button>

@@ -1,31 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:300|Lato:300,400,600,700|Roboto+Condensed:300,700|Open+Sans+Condensed:300,600|Open+Sans:400,300,600,700|Maven+Pro:400,700);
 
-/* aa {
-  color: #BBB;
-} */
-
-/* .contenta:before {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  background-color: #ecf0f1; */
-  /* background-color: #ADD8E6; */
-  /* background-image: url("https://stmed.net/sites/default/files/landscape-wallpapers-27931-9892581.jpg"); */
-  /* width: 100%;
+.authentication-screen{
+  background-color: #85c1ea;
   height: 100%;
-  background-size: cover;
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-} */
+}
 
+.content:before {
+background-color: greenyellow;
+}
 .content {
   -webkit-box-sizing: border-box;
   font-family: "Open Sans";
@@ -40,9 +22,11 @@
   right: 0;
   width: 540px;
   height: 540px;
-  background-color: rgba(109, 102, 102, 0.5); 
+  background-color: white;
+  /* rgba(109, 102, 102, 0.5);  */
    margin: auto auto;
-  padding: 40px;
+  padding: 50px;
+  padding-top: 30px;
   /* -moz-border-radius: 4px;
   -webkit-border-radius: 4px; */
   /* border-radius: 4px; */
@@ -55,12 +39,20 @@
   /* align-content: center; */
   align-items: center;
 }
+
+.authentication-header{
+display: flex;
+width: 90%;
+height: 60px;
+margin-bottom: 10px;
+margin-top: 0px;
+}
 .content .title {
   text-align: center;
   font-size: 40px;
   /* 2.0rem; */
   font-weight: 600;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   /* flex:2; */
 }
 .content input {
@@ -73,6 +65,7 @@
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  background-color: #f2f2f2;
   /* flex:1; */
 }
 .content input[type=checkbox] {
@@ -99,7 +92,8 @@
   position: absolute;
   left: 0;
   bottom: 1px;
-  background-color: #aaa;
+  background-color: yellow;
+  /* #aaa; */
   -moz-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
   box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
@@ -116,12 +110,14 @@
   font-size: 0.9rem;
 }
 .content button {
-  width: 50%;
+  flex:1;
+  /* width: 50%; */
   height: 60px;
   font-size: 1.1rem;
   padding: 20px;
-  margin: 20px 0px;
-  background-color: #8fcadd;
+  /* margin: 20px 0px; */
+  background-color:#85c1ea;
+   /* #8fcadd; */
   /* #ADD8E6; */
   /* rgb(53, 125, 184); */
   /* color: White; */
@@ -131,6 +127,22 @@
   border-radius: 4px; */
   cursor: pointer;
   /* flex:1; */
+}
+.header-button{
+  flex:1;
+  /* height: 60px; */
+  font-size: 1.1rem;
+  padding: 20px;
+  background-color:#85c1ea;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+#active{
+  background-color: #256a9a; 
+}
+.header-button:hover {
+  background-color:#2a79b0; /* Green */
 }
 /* .content .social {
   width: 100%;

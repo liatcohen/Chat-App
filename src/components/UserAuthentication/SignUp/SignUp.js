@@ -39,8 +39,8 @@ class SignUp extends Component {
 
     return (
       <div>
-        <div className="content">
-          <div className="title">Create account</div>
+        <div>
+          <div className="title">Sign Up for Free</div>
           <input type="text" placeholder="First Name" onChange={(event) => this.setState({ firstName: event.target.value })} />
           <input type="text" placeholder="Last Name" onChange={(event) => this.setState({ lastName: event.target.value })} />
           <input type="text" placeholder="E-mail" onChange={(event) => this.setState({ email: event.target.value })} />
