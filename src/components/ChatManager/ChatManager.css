@@ -8,7 +8,7 @@
 	font-family: 'Raleway', sans-serif;
 }
 .left-side{
-	background-color: #52E2A7;
+	/* background-color: #52E2A7; */
 	flex:1;
 	display: flex;
 	flex-direction: column;
@@ -21,8 +21,9 @@
 }
 
 .users-search{
-	background-color: darkmagenta;
+	/* background-color: darkmagenta; */
 	height: var(--top-component-size);
+	
 }
 .users-list{
 	/* background-color: pink; */
@@ -33,6 +34,7 @@
 	height: var(--top-component-size);
 	display: flex;
 	border-bottom:1px solid #E6E6E6;
+	padding: 0.5px;
 
 }
 .message-list{
@@ -42,7 +44,7 @@
 }
 .input-text{
 	height: 60px;
-display: flex;
+	display: flex;
 }
 
 

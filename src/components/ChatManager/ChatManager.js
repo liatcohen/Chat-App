@@ -153,7 +153,7 @@ class chatManager extends Component {
               name={this.state.currChatConnection ? this.state.users[this.state.currChatConnection].userName : null}
               online={this.state.currChatConnection && this.state.users ? this.state.users[this.state.currChatConnection].online : ''} />
           </div>
-          <div className="message-list">
+          {/* <div className="message-list"> */}
             <MessageList chatMessages={this.state.chatMessages}
               currUserId={this.state.currUserId}
               currChatConnection={this.state.currChatConnection}
@@ -161,7 +161,7 @@ class chatManager extends Component {
               myUserImg={this.state.currUser ? this.state.currUser['img'] : ''}
               otherUserImage={this.state.currChatConnection ? this.state.users[this.state.currChatConnection]['img'] : 'https://s3.amazonaws.com/prod.skimble/photos/29359/hstzsdw4avx_full.gif'} />
 
-          </div>
+          {/* </div> */}
           <div className="input-text">
             <InputText clicked={this.sendMessage}
               isDisabled={!this.state.chatId} />
