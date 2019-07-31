@@ -25,11 +25,11 @@ class UserAuthentication extends Component {
   render() {
 
     return (
-<div class="authentication-screen">
+<div className="authentication-screen">
       <div className="content">
-        <div class="authentication-header">
-                    <div class="header-button" id={this.state.SignUp ? "active" : ""} onClick={this.signUpClicked}>Sign Up</div>
-                    <div class="header-button" id={!this.state.SignUp ? "active" : ""} onClick={this.loginClicked}>Log in</div>
+        <div className="authentication-header">
+                    <div className="header-button" id={this.state.SignUp ? "active" : ""} onClick={this.signUpClicked}>Sign Up</div>
+                    <div className="header-button" id={!this.state.SignUp ? "active" : ""} onClick={this.loginClicked}>Log in</div>
                     </div>
         {this.state.SignUp ?
           // <div className="contents">

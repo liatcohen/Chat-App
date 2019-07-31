@@ -15,7 +15,8 @@ class SignUp extends Component {
     const userDetails = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
-      email: this.state.email
+      email: this.state.email,
+      password: this.state.password
     }
     firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
       .then(() => {
@@ -35,17 +36,20 @@ class SignUp extends Component {
       });
   }
 
+  validateFormInputs = (userDetails) => {
+    
+  }
   render() {
 
     return (
       <div>
         <div>
           <div className="title">Sign Up for Free</div>
-          <input type="text" placeholder="First Name" onChange={(event) => this.setState({ firstName: event.target.value })} />
-          <input type="text" placeholder="Last Name" onChange={(event) => this.setState({ lastName: event.target.value })} />
           <input type="text" placeholder="E-mail" onChange={(event) => this.setState({ email: event.target.value })} />
           <input type="password" placeholder="Password" onChange={(event) => this.setState({ password: event.target.value })} />
-          <button onClick={this.createAccount}>Create Account</button>
+          <input type="text" placeholder="First Name" onChange={(event) => this.setState({ firstName: event.target.value })} />
+          <input type="text" placeholder="Last Name" onChange={(event) => this.setState({ lastName: event.target.value })} />
+          <button id="submit" onClick={this.createAccount}>Create Account</button>
         </div>
       </div>
     );

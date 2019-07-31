@@ -31,7 +31,7 @@ class Login extends Component {
           <div className="title">Welcome Back!</div>
           <input type="text" placeholder="E-mail" onChange={(event) => this.setState({ email: event.target.value })} />
           <input type="password" placeholder="Password" onChange={(event) => this.setState({ password: event.target.value })} />
-          <button onClick={this.loginToAccount}>Log In</button>
+          <button id="submit" onClick={this.loginToAccount}>Log In</button>
         </div>
       </div>
     );
