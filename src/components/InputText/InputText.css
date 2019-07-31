@@ -1,34 +1,36 @@
-.bottom-right-section{
+.input-comp{
 	background: #fff;
-	width: 100%;
+	/* width: 100%; */
 	padding: 15px;
-	position: absolute;
+	/* position: absolute; */
 	bottom: 0px;
 	border-top:1px solid #E6E6E6;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
+	flex:1;
 }
-.bottom-right-section input{
+.input-comp input{
 	border:0px;
 	padding:8px 5px;
-	width:100%;
+	flex:1;
+	/* width:100%; */
 }
-.bottom-right-section .btn-send{
+.input-comp .btn-send{
 	border:0px;
 	padding: 8px 10px;
 	float: right;
-	margin-right: 30px;
+	/* margin-right: 30px; */
 	color: #009EF7;
 	font-size: 18px;
 	background: #fff;
 	cursor: pointer;
 }
-.bottom-right-section .btn-send:disabled{
+.input-comp .btn-send:disabled{
 	border:0px;
 	padding: 8px 10px;
 	float: right;
-	margin-right: 30px;
+	/* margin-right: 30px; */
 	color: #B0C4DE;
 	font-size: 18px;
 	background: #fff;

@@ -29,7 +29,7 @@ class InputText extends Component {
 
   render() {
     return (
-      <div className="bottom-right-section">
+      <div className="input-comp">
         <div className="upload-btn">
           <button className="btn"><i className="fa fa-photo"></i></button>
           <input type="file" name="myfile" onChange={(e) => this.handleImageChange(e)} />

@@ -20,7 +20,8 @@ class UsersList extends Component {
           click={() => this.props.click(key)}
           selected={users[key].selected}
           new={this.props.new}
-          newMessage={users[key].hasOwnProperty('newMessage') && users[key]['newMessage'] ? true : false} />
+          newMessage={users[key].hasOwnProperty('newMessage') && users[key]['newMessage'] ? true : false}
+           />
       });
     }
 

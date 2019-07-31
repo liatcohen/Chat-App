@@ -1,3 +1,32 @@
+.msg-head{
+	display: flex;
+}
+.user-img{
+	width: 80px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+.user-img img{
+	text-align: center;
+	width: 55px;
+	border-radius: 50%;
+}
+
+.user-info{
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+.msg-head .user-name{
+	flex:1;
+	font-size: 20px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.is-online{
+	padding: 5px;
+}
 .message{
 	height: calc(100% - 68px);
 	font-family: sans-serif;

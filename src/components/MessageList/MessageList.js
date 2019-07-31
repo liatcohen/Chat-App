@@ -21,7 +21,7 @@ class MessageList extends Component {
     }
 
     return (
-      <div className="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+      <div className="message msg-list" data-mcs-theme="minimal-dark">
         {messages}
       </div>
     );

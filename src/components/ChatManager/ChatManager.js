@@ -7,7 +7,6 @@ import UsersSearch from '../UsersSearch/UsersSearch';
 import MessageHead from '../MessageList/MessageHead/MessageHead';
 import axios from '../../axios-orders';
 import firebase from 'firebase';
-import Modal from '../UsersSearch/Modal/Modal'
 
 class chatManager extends Component {
 
@@ -132,34 +131,42 @@ class chatManager extends Component {
 
 
   render() {
+
     return (
-      <div className="main-section">
-        <div className="head-section">
-          <UsersSearch 
-            logOut={this.logOut}
-            uploadProfilePic={this.uploadProfilePicture}
-            userDetails={this.state.currUser}
-             />
-          <MessageHead
-            name={this.state.currChatConnection ? this.state.users[this.state.currChatConnection].userName : null}
-            online={this.state.currChatConnection && this.state.users ? this.state.users[this.state.currChatConnection].online : ''} />
-        </div>
-        <div className="body-section">
-          <div className="left-section">
+      <div className="chat-manager">
+        <div className="left-side">
+          <div className="users-search">
+            <UsersSearch
+              logOut={this.logOut}
+              uploadProfilePic={this.uploadProfilePicture}
+              userDetails={this.state.currUser}
+            />
+          </div>
+          <div className="users-list">
             <UsersList users={this.state.users} click={this.newConnectionSelected} new={this.state.new} />
           </div>
-          <div className="right-section">
+        </div>
+        <div className="right-side">
+          <div className="message-head">
+            <MessageHead
+              img = {this.state.currChatConnection ? this.state.users[this.state.currChatConnection].img : null}
+              name={this.state.currChatConnection ? this.state.users[this.state.currChatConnection].userName : null}
+              online={this.state.currChatConnection && this.state.users ? this.state.users[this.state.currChatConnection].online : ''} />
+          </div>
+          <div className="message-list">
             <MessageList chatMessages={this.state.chatMessages}
               currUserId={this.state.currUserId}
               currChatConnection={this.state.currChatConnection}
               chatID={this.state.chatId}
               myUserImg={this.state.currUser ? this.state.currUser['img'] : ''}
               otherUserImage={this.state.currChatConnection ? this.state.users[this.state.currChatConnection]['img'] : 'https://s3.amazonaws.com/prod.skimble/photos/29359/hstzsdw4avx_full.gif'} />
+
+          </div>
+          <div className="input-text">
             <InputText clicked={this.sendMessage}
               isDisabled={!this.state.chatId} />
           </div>
         </div>
-
       </div>
     );
   };
