@@ -12,7 +12,7 @@ class InputText extends Component {
 
   sendMessage = (e) => {
     e.preventDefault()
-    this.props.clicked(this.state.msgText);
+    this.props.clicked(this.state.msgText, "text");
     this.setState({ msgText: '' });
   }
 
@@ -23,7 +23,7 @@ class InputText extends Component {
     reader.onload = (e) => {
       const img = e.target.result;
       console.warn("img data: ", e.target.result);
-      this.props.clicked(img);
+      this.props.clicked(img, "image");
     }
   }
 

@@ -81,7 +81,7 @@ class ChatManager extends Component {
   }
 
 
-  sendMessage = (textMassage) => {
+  sendMessage = (textMassage, type) => {
     if (!this.state.chatId) {
       alert('pick a chat room!');
       return;

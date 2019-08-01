@@ -10,6 +10,7 @@
     "react-dom": "^16.8.6",
     "react-dropdown": "^1.6.4",
     "react-scripts": "2.1.8",
+    "regex": "^0.1.1",
     "semantic-ui-react": "^0.86.0",
     "styled-components": "^4.2.0"
   },
