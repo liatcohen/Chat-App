@@ -213,6 +213,16 @@ padding:5px 10px;
 border-radius: 5px 5px 5px 0px;
 position: relative;
 }
+
+.message .msg-desc img{
+	margin-left: 70px;
+	font-size: 12px;
+	background: #E8E8E8;
+	padding:5px 10px;
+	border-radius: 5px 5px 5px 0px;
+	position: relative;
+	height: 50px;
+	}
 .message ul li.msg-left .msg-desc:before{
 position: absolute;
 content: '';

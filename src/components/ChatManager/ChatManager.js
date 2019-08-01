@@ -56,6 +56,7 @@ class ChatManager extends Component {
     axios.get('/chats/' + chatId + '.json')
       .then(response => {
         this.setState({ chatMessages: response.data, chatId: chatId })
+        console.log(response.data)
       });
   }
 
@@ -82,6 +83,7 @@ class ChatManager extends Component {
 
 
   sendMessage = (textMassage, type) => {
+    console.log("type: "+type)
     if (!this.state.chatId) {
       alert('pick a chat room!');
       return;
@@ -91,6 +93,7 @@ class ChatManager extends Component {
       messageText: textMassage,
       reciverId: this.state.currChatConnection,
       senderId: this.state.currUserId,
+      type: type,
       timeStamp: {
         date: new Intl.DateTimeFormat('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' }).format(timestamp),
         time: new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit' }).format(timestamp)
