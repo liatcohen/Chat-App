@@ -5,7 +5,7 @@ import Message from './Message/Message';
 class MessageList extends Component {
 
   render() {
-    let messages = null;
+    let messages = null//"Please pick a chat room!";
     if (this.props.chatMessages) {
       messages = Object.keys(this.props.chatMessages['messages']).map(key => {
         return <ul>
@@ -22,7 +22,9 @@ class MessageList extends Component {
 
     return (
       <div className="message msg-list" data-mcs-theme="minimal-dark">
-        {messages}
+        {messages?
+            messages:
+            <div id="pick-room-msg">Pick a chat room to start chatting</div> }
       </div>
     );
   };

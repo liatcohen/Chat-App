@@ -35,10 +35,6 @@ class usersSearch extends Component {
           <div id="settings-button" onClick={this.settingsClicked}>
             <i className="fa fa-ellipsis-v"></i>
           </div>
-          {/* <button onClick={this.settingsClicked}>
-            <i className="fa fa-ellipsis-v"></i>
-          </button> */}
-
           <div className="menu">
             {this.state.showSettings ?
               <div>

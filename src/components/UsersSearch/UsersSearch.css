@@ -5,41 +5,37 @@
 }
 
 .search{
-	/* float: right;
-	margin-left:40px; */
-	/* background-color: #5F9EA0; */
-display: flex;
-align-content: center;
-align-items: center;
-justify-content: center;
-justify-items: center;
-text-align: center;
-margin-left: 20px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	margin-left: 20px;
 }
 
 #search-button{
 	display: inline-block;
 	height: 30px;
 	width: 30px;
-	/* background-color: fuchsia; */
 	border: 2px solid #009EF7;
 	color:#009EF7;
 	border-radius: 3px;
-
 }
 
 #search-button:hover{
 	color: white;
 	border-color: white;
 	background-color:  #009EF7;
-	}
+}
+
 #search-input{
-	height: 30px;
+ 	height: 30px;
 	width: 200px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 menu{
 	background-color: salmon;
@@ -50,12 +46,10 @@ menu{
 	float: right;
 }
 .headLeft-sub input{
-	/* width: 60%; */
 	height: 60px;
 	border-radius: 0px;
 	border:1px solid #E6E6E6;
-	/* padding: 7px; */
-flex:1;
+	flex:1;
 }
 
 
@@ -74,11 +68,6 @@ flex:1;
 	padding: 15px;
 }
 
-/* .headLeft-info button{
-	padding: 7px 15px;
-	border-radius: 8px;
-} */
-
 .bar-btn button{
 	background: #5F9EA0;
 	color: #fff;
@@ -91,7 +80,6 @@ flex:1;
 }
 
 #settings-button{
-/* background-color: red; */
 height: 30px;
 width: 30px;
 border: 2px solid #009EF7;
@@ -105,4 +93,4 @@ text-align: center;
 	color: white;
 	border-color: white;
 	background-color:  #009EF7;
-	}
+}
