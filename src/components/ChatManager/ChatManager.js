@@ -109,7 +109,6 @@ class ChatManager extends Component {
   }
 
   newConnectionSelected = (newChatConnection) => {
-    console.log("newChatConnection: ", newChatConnection)
     const updatedUsers = {
       ...this.state.users
     }

@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import './MessageList.css';
 import Message from './Message/Message';
+import Lottie from 'react-lottie'
+import animationData from '../../Lottie/arrow.json'
+
 
 class MessageList extends Component {
   render() {
+    const defaultOptions = {
+      loop: true,
+      autoplay: true, 
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    };
 
     let messages = null
     if (this.props.chatMessages) {
@@ -24,9 +35,13 @@ class MessageList extends Component {
 
     return (
       <div className="message msg-list" data-mcs-theme="minimal-dark">
-        {messages ?
+        {this.props.currChatConnection  ?
           messages :
-          <div id="pick-room-msg">Pick a chat room to start chatting
+          <div id="pick-room-msg">
+                Pick a chat room to start chatting
+        <Lottie options={defaultOptions}
+              height={400}
+              width={400}/>
             </div>}
       </div>
     );
