@@ -1,6 +1,22 @@
 .msg-head{
 	display: flex;
 }
+.msg-head .user-name{
+	flex:1;
+	font-size: 20px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+.msg-head .user-info{
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.msg-head .is-online{
+	/* padding: 5px; */
+}
 .user-img{
 	width: 80px;
 	display: flex;
@@ -13,20 +29,9 @@
 	border-radius: 50%;
 }
 
-.user-info{
-	display: flex;
-	flex-direction: column;
-	padding-left: 20px;
-}
-.msg-head .user-name{
-	flex:1;
-	font-size: 20px;
-	margin-top: 15px;
-	font-weight: bold;
-}
-.is-online{
-	padding: 5px;
-}
+
+
+
 .message{
 	height: calc(100% - 68px);
 	font-family: sans-serif;

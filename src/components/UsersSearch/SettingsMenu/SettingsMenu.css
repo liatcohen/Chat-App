@@ -7,17 +7,48 @@
   z-index: 200;
   border-radius: 8px;
 
+  /* border: 2px solid #009EF7; */
+  color:#009EF7;
 }
+/* height: 30px;
+width: 30px;
+border: 2px solid #009EF7;
+color:#009EF7;
+border-radius: 3px;
+text-align: center; */
 
 .setting-menu button{
 	background-color: #D3D3D3;
   padding: 15px 32px;
   width: 200px;
   text-align: left;
-  border-radius: 8px;
-
+  border-radius: 3px;
+  border: 1px solid #009EF7;
+  background-color: white;
 }
+.setting-menu button:hover{
+	/* background-color: #D3D3D3;
+  padding: 15px 32px;
+  width: 200px;
+  text-align: left;
+  border-radius: 3px;
+  border: 1px solid #009EF7;
+  background-color: white; */
 
+
+
+  color: white;
+	/* border-color: white; */
+	background-color:  #009EF7;
+}
+#upload:hover{
+  background-color: black;
+}
+.upload-btn :hover{
+  color: white;
+	/* border-color: white; */
+	background-color:  #009EF7;
+}
 .upload-btn input[type=file] {
   font-size: 100px;
   position: absolute;

@@ -31,9 +31,14 @@ class usersSearch extends Component {
           : null
         }
         <div className="headLeft-info">
-          <button onClick={this.settingsClicked}>
+
+          <div id="settings-button" onClick={this.settingsClicked}>
             <i className="fa fa-ellipsis-v"></i>
-          </button>
+          </div>
+          {/* <button onClick={this.settingsClicked}>
+            <i className="fa fa-ellipsis-v"></i>
+          </button> */}
+
           <div className="menu">
             {this.state.showSettings ?
               <div>
@@ -42,9 +47,11 @@ class usersSearch extends Component {
               : null}
           </div>
           <div className="search">
-            <input type="text" name="search" placeholder="Search..." />
-            <button> <i className="fa fa-search"></i> </button>
+            <input id="search-input" type="text" name="search" placeholder="Search..." />
+            <div id="search-button"> <i className="fa fa-search"></i> </div>
           </div>
+
+
         </div>
       </div>
     );

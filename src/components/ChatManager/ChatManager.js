@@ -8,7 +8,7 @@ import MessageHead from '../MessageList/MessageHead/MessageHead';
 import axios from '../../axios-orders';
 import firebase from 'firebase';
 
-class chatManager extends Component {
+class ChatManager extends Component {
 
   stream = null;
   currChatConnectionObj = null
@@ -153,15 +153,12 @@ class chatManager extends Component {
               name={this.state.currChatConnection ? this.state.users[this.state.currChatConnection].userName : null}
               online={this.state.currChatConnection && this.state.users ? this.state.users[this.state.currChatConnection].online : ''} />
           </div>
-          {/* <div className="message-list"> */}
             <MessageList chatMessages={this.state.chatMessages}
               currUserId={this.state.currUserId}
               currChatConnection={this.state.currChatConnection}
               chatID={this.state.chatId}
               myUserImg={this.state.currUser ? this.state.currUser['img'] : ''}
               otherUserImage={this.state.currChatConnection ? this.state.users[this.state.currChatConnection]['img'] : 'https://s3.amazonaws.com/prod.skimble/photos/29359/hstzsdw4avx_full.gif'} />
-
-          {/* </div> */}
           <div className="input-text">
             <InputText clicked={this.sendMessage}
               isDisabled={!this.state.chatId} />
@@ -172,4 +169,4 @@ class chatManager extends Component {
   };
 };
 
-export default chatManager;
+export default ChatManager;
