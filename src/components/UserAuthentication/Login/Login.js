@@ -61,7 +61,7 @@ class Login extends Component {
             placeholder={this.state.errors.password ? this.state.errors.password : "Password"}
             id={this.state.errors.password ? "error" : null}
             onChange={(event) => this.setState({ password: event.target.value })} />
-          <LoginButton login={this.loginToAccount} />
+          <button id="submit" onClick={this.loginToAccount}>Log In</button>
         </div>
       </div>
     );
