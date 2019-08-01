@@ -46,7 +46,7 @@ class SignUp extends Component {
 
   validateFormInputs = (userDetails) => {
     let isValid = true
-    let errors = {
+    const errors = {
       firstName: null,
       lastName: null,
       email: null,
