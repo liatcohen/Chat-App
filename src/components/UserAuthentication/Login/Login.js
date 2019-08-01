@@ -15,7 +15,11 @@ class Login extends Component {
     email: null,
     password: null,
     tmp: false,
-    userId: null
+    userId: null,
+    errors:{
+      email: null,
+      password:null
+    }
   }
 
   loginToAccount = () => {
