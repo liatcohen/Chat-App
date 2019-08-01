@@ -13,7 +13,9 @@
 
 .content {
   -webkit-box-sizing: border-box;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
+	font-family: 'Raleway', sans-serif;
+
   font-size: 16px;
   font-smoothing: antialiased;
   font-weight: 600;
@@ -52,7 +54,9 @@ margin-top: 0px;
 .content input {
   width: 100%;
   font-size: 1.2rem;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
+  font-family: 'Raleway', sans-serif;
+
   margin: 10px 0px;
   border: none;
   padding: 10px;
@@ -133,7 +137,9 @@ margin-top: 0px;
   bottom: 20px;
   left:180px;
   width: 180px;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 a{

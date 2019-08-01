@@ -180,7 +180,9 @@ position: relative;
 }
 .message{
 height: calc(100% - 68px);
-font-family: sans-serif;
+/* font-family: sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
 }
 .message ul{
 padding: 0px;
