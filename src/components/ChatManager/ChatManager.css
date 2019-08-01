@@ -124,6 +124,9 @@ cursor: pointer;
 background: #009EF7;
 color: #fff;
 position: relative;
+-webkit-box-shadow: -8px 4px 10px #a1a1a1;
+-moz-box-shadow: -8px 4px 10px #a1a1a1;
+box-shadow: -8px 4px 10px #a1a1a1;
 }
 .mCustomScrollBox, .mCSB_container{
 overflow: unset !important;

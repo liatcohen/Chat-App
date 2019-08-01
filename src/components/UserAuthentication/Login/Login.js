@@ -3,8 +3,14 @@ import '../UserAuthentication.css'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
-class Login extends Component {
 
+function LoginButton(props) {
+  return (
+    <button id="submit" onClick={props.login}>Log In</button>
+  )
+}
+
+class Login extends Component {
   state = {
     email: null,
     password: null,
@@ -31,7 +37,7 @@ class Login extends Component {
           <div className="title">Welcome Back!</div>
           <input type="text" placeholder="E-mail" onChange={(event) => this.setState({ email: event.target.value })} />
           <input type="password" placeholder="Password" onChange={(event) => this.setState({ password: event.target.value })} />
-          <button id="submit" onClick={this.loginToAccount}>Log In</button>
+          <LoginButton login={this.loginToAccount}/>
         </div>
       </div>
     );
