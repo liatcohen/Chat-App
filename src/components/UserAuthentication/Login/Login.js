@@ -3,13 +3,6 @@ import '../UserAuthentication.css'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
-
-function LoginButton(props) {
-  return (
-    <button id="submit" onClick={props.login}>Log In</button>
-  )
-}
-
 class Login extends Component {
   state = {
     email: null,
