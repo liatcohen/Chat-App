@@ -32,7 +32,7 @@ class SignUp extends Component {
           firebase.database().ref('users/' + user.uid).set({
             userName: userDetails.firstName + " " + userDetails.lastName,
             email: userDetails.email,
-            img: 'https://articles-images.sftcdn.net/wp-content/uploads/sites/3/2016/01/wallpaper-for-facebook-profile-photo.jpg',
+            img: 'https://immedilet-invest.com/wp-content/uploads/2016/01/user-placeholder.jpg',
             online: false,
             selected: false
           })
