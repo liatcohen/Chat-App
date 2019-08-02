@@ -51,8 +51,8 @@
 }
 .user-msg-left .user-side-img img{
 	text-align: center;
-	width: 55px;
-	border-radius: 50%;
+	width: 40px;
+	border-radius: 50%;	
 }
 
 .user-msg-right .img-msg{
@@ -91,25 +91,18 @@
 	left: -10px;
 }
 .user-msg-right .user-side-img{
-	width: 80px;
 	display: flex;
 	align-items: center;
 	padding-left: 20px;
 	text-align: center;
-	width: 55px;
-	border-radius: 50%;
-
-	/* position: absolute; */
 	width: 40px;
-	/* bottom: 30px; */
-  border-radius: 50%;
-  
-	
+	bottom: 30px;
+  	border-radius: 50%;	
 }
 .user-msg-right .user-side-img img{
 	text-align: center;
-	width: 55px;
-	border-radius: 50%;
+	width: 40px;
+	border-radius: 50%;	
 }
 .user-img img{
 	text-align: center;

@@ -9,7 +9,7 @@ class MessageList extends Component {
   render() {
     const defaultOptions = {
       loop: true,
-      autoplay: true, 
+      autoplay: true,
       animationData: animationData,
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
@@ -19,7 +19,6 @@ class MessageList extends Component {
     let messages = null
     if (this.props.chatMessages) {
       messages = Object.keys(this.props.chatMessages['messages']).map(key => {
-        console.log(this.props.chatMessages['messages'][key]['type'])
         return <ul>
           <Message
             messageText={this.props.chatMessages['messages'][key]['messageText']}
@@ -35,14 +34,14 @@ class MessageList extends Component {
 
     return (
       <div className="message msg-list" data-mcs-theme="minimal-dark">
-        {this.props.currChatConnection  ?
+        {this.props.currChatConnection ?
           messages :
           <div id="pick-room-msg">
-                Pick a chat room to start chatting
+            Pick a chat room to start chatting
         <Lottie options={defaultOptions}
               height={400}
-              width={400}/>
-            </div>}
+              width={400} />
+          </div>}
       </div>
     );
   };

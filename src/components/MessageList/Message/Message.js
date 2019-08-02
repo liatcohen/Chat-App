@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 function ImageMessage(props) {
   return (
     <div className={props.class === "msg-right" ? "user-msg-right" : "user-msg-left"}>
-      <img class="user-side-img" src={props.userImg} />
+      <div class="user-side-img"><img  src={props.userImg} /></div>
       <div className="img-msg-inner">
         <div class="img-msg"><img id="image-msg" src={props.messageText} /> <small>{props.timeStamp}</small>
         </div>

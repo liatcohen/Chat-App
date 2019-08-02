@@ -56,7 +56,6 @@ class ChatManager extends Component {
     axios.get('/chats/' + chatId + '.json')
       .then(response => {
         this.setState({ chatMessages: response.data, chatId: chatId })
-        console.log(response.data)
       });
   }
 
@@ -83,7 +82,6 @@ class ChatManager extends Component {
 
 
   sendMessage = (textMassage, type) => {
-    console.log("type: "+type)
     if (!this.state.chatId) {
       alert('pick a chat room!');
       return;
@@ -125,7 +123,6 @@ class ChatManager extends Component {
   }
 
   uploadProfilePicture = (profilePic) => {
-    console.log("uploadProfilePicture!!")
     firebase.database().ref('users/' + localStorage.getItem('currUserIdInChat')).update({
       img: profilePic
     })
