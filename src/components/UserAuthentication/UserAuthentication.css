@@ -149,7 +149,7 @@ a{
   border-color: red;
 }
 
-svg {
+.demo-button svg {
   position: fixed;
   top: 18vh;
   left: 15vw;
@@ -158,16 +158,16 @@ svg {
   z-index: 2;
   filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.3));
 }
-svg path {
+.demo-button svg path {
   cursor: pointer;
   animation: blob 2s infinite forwards;
   transform-origin: 50% 50%;
 }
 
-svg path:hover {
+.demo-button svg path:hover {
   fill: #fee06e;
 }
-svg text {
+.demo-button svg text {
   font-size: 25px;
   cursor: pointer;
 }
