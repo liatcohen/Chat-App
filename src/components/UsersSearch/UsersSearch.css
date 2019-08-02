@@ -1,3 +1,7 @@
+:root {
+	--main-setting-color:#004085;
+
+  }
 .headLeft-section{
 	border-right:1px solid #E6E6E6;
 	background-color:#E8E8E8;
@@ -80,17 +84,28 @@ menu{
 }
 
 #settings-button{
-height: 30px;
-width: 30px;
-border: 2px solid #009EF7;
-color:#009EF7;
+height: 35px;
+width: 35px;
+border: 2px solid var(--main-setting-color);
+ /* #009EF7; */
+color:var(--main-setting-color);
+/* #009EF7; */
 border-radius: 3px;
 text-align: center;
 
-
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-items: center;
 }
 #settings-button:hover{
 	color: white;
 	border-color: white;
-	background-color:  #009EF7;
+	background-color: var(--main-setting-color);
+	 /* #009EF7; */
+}
+
+.fa-ellipsis-v{
+	font-size: 25px;
 }

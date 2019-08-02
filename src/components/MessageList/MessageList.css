@@ -42,12 +42,8 @@
 	text-align: center;
 	width: 55px;
 	border-radius: 50%;
-
-	/* position: absolute; */
 	width: 40px;
-	/* bottom: 30px; */
-  border-radius: 50%;
-	
+  	border-radius: 50%;
 }
 .user-msg-left .user-side-img img{
 	text-align: center;
@@ -167,6 +163,7 @@
 	padding:5px 10px;
 	border-radius: 5px 5px 5px 0px;
 	position: relative;
+	color: #004085;
 }
 .message ul li.msg-left .msg-desc:before{
 	position: absolute;
@@ -175,9 +172,7 @@
 	border-bottom-color: #E8E8E8;
 	bottom: 0px;
 	left: -10px;
-	/* background-color: darkgreen; */
 }
-
 
 .message ul li.msg-left small{
 	float: right;
@@ -203,7 +198,6 @@
 	padding:5px 10px;
 	border-radius: 5px 5px 5px 0px;
 	position: relative;
-	/* background-color: sandybrown; */
 }
 .message ul li.msg-right .msg-desc:before{
 	position: absolute;
@@ -212,7 +206,6 @@
 	border-bottom-color: #cce5ff;
 	bottom: 0px;
 	right: -10px;
-	/* background-color: black; */
 }
 small{
 	color: 	#c1c1c1;

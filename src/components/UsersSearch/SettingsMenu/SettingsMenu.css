@@ -1,3 +1,5 @@
+
+
 .setting-menu{
 	width: 200px;
 	float: left;
@@ -6,28 +8,38 @@
   position: fixed;
   z-index: 200;
   border-radius: 8px;
-  color:#009EF7;
+  color:var(--main-setting-color);
+  /* #009EF7; */
 }
 
 .setting-menu button{
 	background-color: #D3D3D3;
-  padding: 15px 32px;
+  /* padding: 15px 32px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   width: 200px;
   text-align: left;
   border-radius: 3px;
-  border: 1px solid #009EF7;
+  border: 1px solid var(--main-setting-color);
+  /* #009EF7; */
   background-color: white;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+
 }
 .setting-menu button:hover{
   color: white;
-	background-color:  #009EF7;
+  background-color: var(--main-setting-color);
+   /* #009EF7; */
 }
 #upload:hover{
   background-color: black;
 }
 .upload-btn :hover{
   color: white;
-	background-color:  #009EF7;
+  background-color: var(--main-setting-color);
+   /* #009EF7; */
 }
 .upload-btn input[type=file] {
   font-size: 100px;

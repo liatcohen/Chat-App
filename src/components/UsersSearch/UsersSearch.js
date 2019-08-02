@@ -42,10 +42,10 @@ class usersSearch extends Component {
               </div>
               : null}
           </div>
-          <div className="search">
+          {/* <div className="search">
             <input id="search-input" type="text" name="search" placeholder="Search..." />
             <div id="search-button"> <i className="fa fa-search"></i> </div>
-          </div>
+          </div> */}
 
 
         </div>
